@@ -1,0 +1,55 @@
+QMainWindow { 
+    background-color: #f5f6fa; 
+}
+#identitasLabel {
+    background-color: #2f3640;
+    color: #f5f6fa;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+QPushButton {
+    background-color: #3498db;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+QPushButton:hover { 
+    background-color: #2980b9; 
+}
+/* Container Utama Tabel */
+QTableWidget {
+    background-color: #ffffff;
+    alternate-background-color: #f8f9fa; /* Warna selang-seling */
+    gridline-color: #dcdde1;
+    color: #2f3640;
+    font-size: 14px;
+    border: 1px solid #dcdde1;
+    border-radius: 4px;
+    selection-background-color: #3498db; /* Warna saat baris diklik */
+    selection-color: white;
+}
+
+/* Mengatur Header Tabel (ID, Nama Alat, dll) */
+QHeaderView::section {
+    background-color: #353b48; /* Warna header gelap agar kontras */
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+    border-right: 1px solid #7f8c8d;
+    border-bottom: 2px solid #2f3640;
+}
+
+/* Menghilangkan garis biru saat sel dipilih (fokus) */
+QTableWidget:focus {
+    outline: none;
+}
+
+/* Memberikan padding pada isi sel agar tidak terlalu rapat ke garis */
+QTableWidget::item {
+    padding: 10px;
+}
